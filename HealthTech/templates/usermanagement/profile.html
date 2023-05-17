@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Profile</h1>
+  <div class="row">
+    <div class="col-sm-4">
+      <h4>Personal Information</h4>
+      <p><strong>Name:</strong> {{ user.first_name }} {{ user.last_name }}</p>
+      <p><strong>Email:</strong> {{ user.email }}</p>
+      <p><strong>Phone Number:</strong> {{ profile.phone_number }}</p>
+      <p><strong>Address:</strong> {{ profile.address }}</p>
+    </div>
+    <div class="col-sm-8">
+      <h4>Medical Information</h4>
+      <p><strong>Blood Type:</strong> {{ profile.blood_type }}</p>
+      <p><strong>Allergies:</strong> {{ profile.allergies }}</p>
+      <p><strong>Medications:</strong> {{ profile.medications }}</p>
+      <p><strong>Medical History:</strong> {{ profile.medical_history }}</p>
+    </div>
+  </div>
+{% endblock %}
